@@ -1,0 +1,3 @@
+:HL["/_next/static/chunks/14i0mav--e8uj.css","style"]
+:HL["https://s3plus.meituan.net/citadelweb-files/fonts/Meituan%20Type-Regular.woff2","font",{"crossOrigin":"anonymous","type":"font/woff2"}]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"tags","param":null,"prefetchHints":0,"slots":{"children":{"name":"tag","param":{"type":"d","key":"%E7%AB%99%E5%8A%A1","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"LHPHg-OJH0BwohG3BNlFH"}

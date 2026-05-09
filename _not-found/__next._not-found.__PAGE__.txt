@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[22016,["/_next/static/chunks/0.ebzh3nar5rd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],""]
+3:I[97367,["/_next/static/chunks/0.ebzh3nar5rd.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+4:"$Sreact.suspense"
+0:{"rsc":["$","$1","c",{"children":[["$","div",null,{"className":"flex flex-col items-center justify-center pt-14 pb-24 text-center","children":[["$","div",null,{"className":"sec-rule w-full max-w-md mx-auto mb-10","children":[["$","span",null,{"className":"sec-numeral","children":"—"}],["$","span",null,{"className":"sec-meta","children":"未找到"}],["$","span",null,{"className":"sec-pages","children":"— / 008"}]]}],["$","p",null,{"className":"text-[90px] leading-none font-extrabold text-[var(--ink-at-12)] select-none mb-3","children":"404"}],["$","p",null,{"className":"text-[20px] font-bold mb-2","children":["页面未找到",["$","span",null,{"className":"dot-coral","children":"."}]]}],["$","p",null,{"className":"text-[var(--ink-mute)] text-sm mb-6","children":"您寻找的页面不存在或已被移除。"}],["$","$L2",null,{"href":"/","className":"btn-primary","children":"返回首页"}]]}],null,["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"LHPHg-OJH0BwohG3BNlFH"}
+5:null

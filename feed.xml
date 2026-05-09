@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CasterWx</title>
+    <link>https://casterwx.github.io</link>
+    <description>Personal site of CasterWx</description>
+    <language>en</language>
+    <lastBuildDate>Sat, 09 May 2026 08:00:43 GMT</lastBuildDate>
+    <atom:link href="https://casterwx.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title><![CDATA[用 Tailwind CSS v4 构建设计系统]]></title>
+      <link>https://casterwx.github.io/blog/tailwind-v4-design-system</link>
+      <description><![CDATA[Tailwind v4 引入了 CSS-first 配置方式：@theme 指令和自动内容检测。本文介绍如何用它建立统一的设计系统。]]></description>
+      <pubDate>Thu, 07 May 2026 00:00:00 GMT</pubDate>
+      <guid>https://casterwx.github.io/blog/tailwind-v4-design-system</guid>
+    </item>
+    <item>
+      <title><![CDATA[Next.js 静态导出部署到 GitHub Pages 实践指南]]></title>
+      <link>https://casterwx.github.io/blog/nextjs-static-export</link>
+      <description><![CDATA[一份实操指南：如何将 Next.js 应用以 output: 'export' 方式部署到 GitHub Pages，包括 basePath 配置、图片优化变通方案和 MDX 支持。]]></description>
+      <pubDate>Sun, 03 May 2026 00:00:00 GMT</pubDate>
+      <guid>https://casterwx.github.io/blog/nextjs-static-export</guid>
+    </item>
+    <item>
+      <title><![CDATA[你好，世界——欢迎来到新站点]]></title>
+      <link>https://casterwx.github.io/blog/hello-world</link>
+      <description><![CDATA[用 Next.js 重建个人站点的第一篇文章。为什么要重建，以及接下来会写些什么。]]></description>
+      <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
+      <guid>https://casterwx.github.io/blog/hello-world</guid>
+    </item>
+  </channel>
+</rss>
