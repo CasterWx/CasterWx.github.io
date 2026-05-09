@@ -19,9 +19,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="zh-CN" className="h-full antialiased">
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-      <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500&family=Inter+Tight:wght@600;700;800;900&family=JetBrains+Mono:wght@400;500&family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet" />
+      <link
+        rel="preload"
+        href="https://s3plus.meituan.net/citadelweb-files/fonts/Meituan%20Type-Regular.woff2"
+        as="font"
+        type="font/woff2"
+        crossOrigin="anonymous"
+      />
       <body className="min-h-full flex flex-col bg-[var(--paper)] text-[var(--ink)]">
         <SideRails />
         <Header />

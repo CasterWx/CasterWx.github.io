@@ -9,7 +9,6 @@ export function Header() {
 
   return (
     <>
-      {/* Metadata Strip */}
       <div className="container-ed meta-strip">
         <span>Vol. 01 / Issue Nº 26</span>
         <span>归档于{" "}
@@ -27,56 +26,31 @@ export function Header() {
         </span>
       </div>
 
-      {/* Navigation */}
-      <header className="container-ed flex items-center justify-between py-5">
-        <Link
-          href="/"
-          className="flex items-center gap-2 text-display text-lg tracking-tight text-[var(--ink)] hover:text-[var(--coral)] transition-colors"
-        >
-          <span className="text-serif-italic text-[var(--coral)] text-base">Ø</span>
+      <header className="container-ed flex items-center justify-between py-3">
+        <Link href="/" className="flex items-center gap-2 text-display text-base tracking-tight text-[var(--ink)] hover:text-[var(--coral)] transition-colors">
+          <span className="text-serif-italic text-[var(--coral)]">Ø</span>
           CasterWx
         </Link>
 
-        <nav className="hidden sm:flex items-center gap-8">
+        <nav className="hidden sm:flex items-center gap-6">
           {navLinks.map((link) => {
-            const isActive =
-              link.href === "/"
-                ? pathname === "/"
-                : pathname.startsWith(link.href);
+            const isActive = link.href === "/" ? pathname === "/" : pathname.startsWith(link.href);
             return (
-              <Link
-                key={link.href}
-                href={link.href}
-                className={`text-sm tracking-wide transition-colors ${
-                  isActive
-                    ? "text-[var(--coral)] font-semibold"
-                    : "text-[var(--ink-soft)] hover:text-[var(--ink)]"
-                }`}
-                style={{ fontFamily: "'Inter Tight','Inter',sans-serif" }}
-              >
+              <Link key={link.href} href={link.href}
+                className={`text-sm tracking-wide transition-colors font-bold ${isActive ? "text-[var(--coral)]" : "text-[var(--ink-soft)] hover:text-[var(--ink)]"}`}>
                 {link.label}
               </Link>
             );
           })}
-          <span className="text-[var(--mustard)] text-sm select-none">★</span>
+          <span className="text-[var(--mustard)] select-none text-xs">★</span>
         </nav>
 
-        {/* Mobile nav */}
-        <nav className="flex sm:hidden items-center gap-5">
+        <nav className="flex sm:hidden items-center gap-4">
           {navLinks.slice(0, 4).map((link) => {
-            const isActive =
-              link.href === "/"
-                ? pathname === "/"
-                : pathname.startsWith(link.href);
+            const isActive = link.href === "/" ? pathname === "/" : pathname.startsWith(link.href);
             return (
-              <Link
-                key={link.href}
-                href={link.href}
-                className={`text-xs tracking-wide transition-colors ${
-                  isActive ? "text-[var(--coral)] font-semibold" : "text-[var(--ink-soft)]"
-                }`}
-                style={{ fontFamily: "'Inter Tight','Inter',sans-serif" }}
-              >
+              <Link key={link.href} href={link.href}
+                className={`text-xs tracking-wide transition-colors font-bold ${isActive ? "text-[var(--coral)]" : "text-[var(--ink-soft)]"}`}>
                 {link.label}
               </Link>
             );
