@@ -1,0 +1,32 @@
+---
+title: "CasterWx.github.io"
+description: "本站——使用 Next.js、TypeScript 和 MDX 构建，静态导出部署于 GitHub Pages。"
+tags: ["Next.js", "TypeScript", "MDX"]
+url: "https://casterwx.github.io"
+repo: "https://github.com/CasterWx/CasterWx.github.io"
+featured: true
+---
+
+## 架构
+
+本站是一个**静态导出的 Next.js 应用**。每个页面在构建时预渲染为纯 HTML/CSS/JS 文件，从 GitHub Pages 提供服务。
+
+### 内容流水线
+
+1. 文章以 `.mdx` 文件存于 `content/blog/`
+2. 构建时，`gray-matter` 提取 frontmatter，`@next/mdx` 将 MDX 编译为 React 组件
+3. `generateStaticParams()` 为每篇文章生成路由
+4. 页面导出到 `out/` 目录
+5. GitHub Actions 将 `out/` 推送到 `gh-pages` 分支
+
+### 关键决策
+
+- **App Router** + `src/` 目录结构
+- **Tailwind CSS v4** CSS-first `@theme` 配置
+- **`@next/mdx`** 框架级 MDX 编译集成
+- **无外部 CMS** —— 内容即 Git 文件。推送即发布。
+- **编辑风格** —— Atelier Zero 设计系统：暖纸底色、coral 单强调色、Playfair 斜体混排、罗马数字章节标记
+
+### 性能
+
+静态导出意味着零服务端开销。每个页面都是预构建的 HTML 文件，JavaScript hydration 最小化。唯一的运行时 JS 用于交互元素（导航高亮、动画微交互）。

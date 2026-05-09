@@ -1,0 +1,63 @@
+---
+title: "用 Tailwind CSS v4 构建设计系统"
+date: "2026-05-07"
+description: "Tailwind v4 引入了 CSS-first 配置方式：@theme 指令和自动内容检测。本文介绍如何用它建立统一的设计系统。"
+tags: ["CSS", "Tailwind", "设计"]
+featured: false
+---
+
+## v4 的变化
+
+Tailwind v4 将配置从 JavaScript 迁移到 CSS。不再需要 `tailwind.config.ts` —— 所有配置都在样式表中：
+
+```css
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #2563eb;
+  --color-background: #ffffff;
+  --font-sans: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+```
+
+## 设计令牌
+
+在 `@theme` 中定义一次，通过 utility class 全局使用：
+
+```css
+@theme {
+  --radius-card: 0.75rem;
+  --shadow-card: 0 1px 3px rgb(0 0 0 / 0.1);
+}
+```
+
+然后在组件中：
+
+```html
+<div class="bg-background rounded-card shadow-card">
+  <!-- 卡片内容 -->
+</div>
+```
+
+## 暗色模式
+
+基于 class 的暗色模式使用 `@variant` 指令：
+
+```css
+@variant dark (&:where(.dark, .dark *));
+```
+
+在 `<html>` 上切换 `.dark` 类即可激活所有 `dark:` 变体。
+
+## 自定义 Utility
+
+```css
+@utility prose {
+  max-width: 65ch;
+  line-height: 1.75;
+  color: var(--color-text);
+}
+```
+
+设计令牌留在 CSS 中，utility 在 HTML 中消费。边界清晰，各司其职。
