@@ -16,8 +16,9 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: "22"
+          node-version: "24"
 
+      - run: rm -f package-lock.json
       - run: npm install
       - run: npm run build
 
